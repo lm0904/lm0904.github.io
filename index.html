@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>卓柏卡布拉王国</title>
-    <base href="/" />
+﻿---
+layout: default
+title: 我的Blog
+---
+{% for post in site.posts %}
+<div class="post-item boxed post-detail">
+    <div class="post-title">
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    </div>
+    <div class="post-meta-top">
+        <span class="post-date">{{ post.date | date_to_string }}</span> <span class="post-author">@postPaged.Author</span> <span class="link-comments"><a href="@postPaged.OriginalLink">Original Link</a></span>
 
-    <link rel="stylesheet" href="/dist/vendor.css" asp-append-version="true" />
-    <link rel="stylesheet" href="/dist/site.css" asp-append-version="true" />
-</head>
-<body>
-    <div id="react-app" asp-prerender-module="ClientApp/dist/main-server">Loading...</div>
+    </div>
+    <div class="post-descr entry">
+        {{ post.excerpt }}
+    </div>
 
-    <script src="/dist/vendor.js" asp-append-version="true"></script>
-    <script src="/dist/main-client.js" asp-append-version="true"></script>
-</body>
-</html>
+    <p><a class="readmore" href="{{ site.baseurl }}{{ post.url }}">Read more...</a></p>
 
+</div>
+{% endfor %}
