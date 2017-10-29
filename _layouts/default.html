@@ -21,7 +21,66 @@
 
 </head>
 <body>
-    {{ content }}
+    <div class="body_wrap">
+        <div class="github-fork-ribbon-wrapper right">
+            <div class="github-fork-ribbon">
+                <a href="https://github.com/NancyFx/Nancy.Blog">Fork me on GitHub</a>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img alt="nancy logo" src="/Content/images/logo.png" />
+        </div>
+
+        <div class="header">
+            <div class="header_inner">
+                <nav id="topmenu" class="clearfix">
+                    <ul class="dropdown">
+                        <li class="menu-item-blue">
+                            <a href='/'>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="menu-item-pink">
+                            <a href='/About'>
+                                <span>About</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <select id="topm-select">
+                        <option value="">Site Navigation</option>
+                        <option value="/">Home</option>
+                        <option value="/about">About</option>
+                    </select>
+                </nav>
+
+            </div>
+        </div>
+        <div id="middle" class="full_width">
+            <div class="container clearfix">
+                <div class="">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+        <div class="footer_social">
+            <div class="footer_social_inner">
+                <div class="container">
+                    <a href="http://twitter.com/NancyFx" class="social-twitter">Twitter</a>
+                    <a href="https://github.com/NancyFx" class="social-github">Github</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <p class="copyright">Powered by the community</p>
+            </div>
+        </div>
+
+    </div>
+    
 
     <script src="/dist/vendor.js"></script>
 </body>
