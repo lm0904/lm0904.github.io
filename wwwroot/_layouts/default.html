@@ -15,7 +15,7 @@
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="Cache" content="no-cache">
     <title>ChupacabraKingdom Blog</title>
-    <base href="/" />
+    <base href="~/" />
 
     <link rel="stylesheet" href="wwwroot/dist/vendor.css" asp-append-version="true" />
     <link rel="stylesheet" href="wwwroot/dist/site.css" asp-append-version="true" />
@@ -25,10 +25,9 @@
 
 </head>
 <body>
-    <div id="react-app">Loading...</div>
-    <script src="wwwroot/dist/vendor.js"></script>
-    <script src="wwwroot/dist/main-client.js"></script>
-    
+    {{ content }}
+
+    <script src="wwwroot/dist/vendor.js" asp-append-version="true"></script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>
-

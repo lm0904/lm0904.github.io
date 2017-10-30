@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }} - ChupacabraKingdom_Blog</title>
+    <base href="~/" />
+
+    <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700%7CCourgette' rel='stylesheet' type='text/css'>
+    <link href="~/content/css/style.css" media="screen" rel="stylesheet">
+    <link href="~/content/css/screen.css" media="screen" rel="stylesheet">
+
+</head>
+<body>
+    {{ content }}
+
+    <script src="~/dist/vendor.js" asp-append-version="true"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
