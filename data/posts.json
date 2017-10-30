@@ -1,0 +1,8 @@
+[
+  {
+    "Title": "VQ Communications Funds NancyFX to run on CoreCLR",
+    "Content": "Nearly 2 years ago I was employed by VQ Communications primarily because of my open source contributions to NancyFX. They had started work on a v2 of their flagship product and had begun work with Nancy and needed someone to help drive a HTTP API and architect a scaling solution as their v2 product was addressing a requirement they had for it cope with large volumes of traffic. Also of interest to me was their aim to deliver all of this as a black box appliance to customers on a VM running a custom embedded version of Linux using Postgres as the database. I would work four days a week remotely and go into the office one day a week. They already had completely remote employees and since",
+    "HtmlName": "1",
+    "PublishedDate": "March 29, 2016"
+  }
+]
