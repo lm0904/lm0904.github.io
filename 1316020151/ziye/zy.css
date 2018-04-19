@@ -1,0 +1,12 @@
+﻿* {
+margin-left: 5px;
+padding: 0;
+color: #000;
+font-size: 18px;
+color:#000;
+list-style-type: none;
+text-decoration: none;
+}
+body {
+    background:url(../images/bg_body1.jpg) repeat-x;
+}

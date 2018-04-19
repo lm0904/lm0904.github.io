@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>无标题文档</title>
+    <style>
+        .jump-top-box {
+            width: 40px;
+            position: fixed;
+            z-index: 999;
+            top: -1000px;
+            display: block;
+        }
+
+            .jump-top-box .jump-top {
+                height: 40px;
+                display: block;
+                position: relative;
+                z-index: 1;
+                margin-bottom: 5px;
+            }
+
+        .jump-top a {
+            background: #a0a0a0;
+            color: #000;
+            font-size: 12px;
+            text-decoration: none;
+            display: block;
+            padding: 6px 8px 8px;
+            height: 26px;
+            width: 24px;
+            line-height: 14px;
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+            border-radius: 2px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            function scrollFunc(e) {
+                console.log(window.pageYOffset);
+                console.log(window.screen.availHeight);
+                var back = document.getElementById("back");
+                if (window.screen.availHeight > document.body.clientHeight - window.pageYOffset) {
+                    back.style.visibility = "visible";
+                } else {
+                    back.style.visibility = "hidden";
+                }
+            }
+            if (document.addEventListener) {
+                document.addEventListener('DOMMouseScroll', scrollFunc, false);
+            }//W3C
+            window.onmousewheel = document.onmousewheel = scrollFunc;//IE/Opera/Chrome/Safari
+        }
+    </script>
+</head>
+
+<body style="height:1000px">
+    <div class="jump-top-box" style="right: 5px; top: 580px;">
+        <div id="back" class="jump-top" style="visibility: hidden;">
+            <a href="#" target="_self">返回顶部</a>
+        </div>
+    </div>
+</body>
+</html>

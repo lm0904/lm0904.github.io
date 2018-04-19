@@ -1,0 +1,169 @@
+﻿*{
+    margin:0;
+    padding:0;
+    color:#000;
+    font-size:12px;
+    list-style-type:none;
+    text-decoration:none;
+}
+
+body{
+   background:url(images/bg_body.jpg) no-repeat center;/*center有在兼容模式有问题*/
+}
+#music_div {
+    margin-top:0px;
+    position:fixed;
+    height:0px;
+    border:1px solid red;
+}
+#cle {
+    clear: both;
+}
+#header{
+    width:776px;
+    height:110px;
+    margin:0 auto 20px auto;
+    background:url(images/bg_main.jpg);
+}
+#main{
+    width:776px;
+    margin:0 auto;
+}
+#main #container{
+    float:right;
+    width:556px;
+    padding-bottom:10px;
+   
+}
+#main #sider{
+    float:left;
+    width:220px;
+    background:#cc3;
+}
+#footer{
+    clear:both;
+    width:776px;
+    margin:0 auto;
+    border-top:1px solid #06f;
+    background:#f90;
+}
+#header #logo{
+    float:left;
+    margin-top:15px;
+    background:url(images/top.jpg) no-repeat 0 0;
+}
+#header #logo a {
+    display:block;
+    width:138px;
+    height:45px;
+    text-indent:150px;
+    white-space:nowrap;
+    overflow:hidden;
+}
+#header #slogan{
+    float:left;
+    width:256px;
+    height:45px;
+    margin:8px 0 0 28px;
+    background:url(images/slogan.gif) no-repeat 0 0;
+    text-indent:260px;
+    white-space:nowrap;
+    overflow:hidden;
+}
+#header #search{
+    float:right;
+    width:226px;
+    height:20px;
+    margin-top:22px;
+}
+#header #search #keyword{
+    float:left;
+    width:172px;
+    height:18px;
+    line-height:18px;
+    color:#06f;
+    border:1px solid #999;
+    background:#fff url(images/search_ico.jpg) no-repeat 0 0;
+    text-indent:20px;
+}
+#header #search #search_btn
+{
+    float:right;
+    width:46px;
+    height:20px;
+}
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6{
+    float:left;
+    margin-left:7px;
+    margin-right:7px;
+    margin-top:2px;
+    width:100px;
+    padding:5px;
+    background:#999;
+    font-size:20px;
+    color:#ffd800;
+    border-radius:15px;
+    text-align:center;
+
+}
+#daohang {
+    position: absolute;
+    width:750px;
+    top:60px;
+}
+iframe {
+     width:100%;
+     height:834px;
+     background: #ffffff;
+}
+li{
+    padding:4px;
+    list-style-type:none;
+}
+#daohang a {
+    font-size:20px;
+}
+#paomadeng {
+    margin-top:52px;
+    background-color:#10eeaa;
+}
+#guanggao{
+    height:200px;
+    width:200px;
+    position:fixed;
+    right:0px;
+    bottom:0px;
+    background-color:rgba(255, 255, 255, 0.00);
+    z-index:10;
+}
+#jiaocha{
+    position:absolute;
+    z-index:10;
+}
+#xingming{
+    background-color:rgba(0, 0, 0, 0.50);
+    position:absolute;
+    font-size:20px;
+    color:#8bffb8;
+    text-align:center;
+    height:200px;
+    font-weight:700; 
+    padding-top:50px; 
+    width:200px;
+}
+.siderlist {
+    border-color:#2c15f5;
+    border-right-style: dotted;
+    background:url(images/index.jpg);
+}
+.siderlist ul{
+    margin-left:18px;
+}
+.siderlist h3{
+    width:50px;
+    background:#ff0000;
+    border-top-right-radius:15px;
+    
+}
+
+

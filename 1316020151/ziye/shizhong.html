@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link type="text/css" href="zy.css" rel="stylesheet" />
+
+</head>
+<body>
+    <script type="text/javascript">
+        function startTime()
+        {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            //当数字小雨10的时候再前面加一个0
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+            //每隔500毫秒重新执行一次
+            startTimet = setTimeout('startTime()', 500);
+        }
+
+        function checkTime(i)
+        {
+            if (i<10)
+            {
+                i = '0' + i;
+            }
+            return i;
+        }
+    </script>
+    <h1>jquery</h1>
+    <div id="clock"></div>
+    <input type="button" name="button" onclick="startTime(); return false"  value="启动时钟"/>
+    <p>
+        jQuery是一套跨浏览器的JavaScript库，简化HTML与JavaScript之间的操作。由John Resig<img src="../images/1.jpg" alt="" style="height:150px; float:left;" />在2006年1月的BarCamp NYC上发布第一个版本。目前是由 Dave Methvin 领导的开发团队进行开发。全球前10000个访问最高的网站中，有59%使用了jQuery，是目前最受欢迎的JavaScript库。
+        
+    </p>
+</body>
+</html>

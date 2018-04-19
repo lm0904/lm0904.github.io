@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link type="text/css" href="css.css"  rel="stylesheet"/>
+    <script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+    <!--音乐-->
+    <div id="music_div">
+        <audio src="1.mp3" controls="controls"  autoplay="autoplay" onended="music_stop();" style="width:47px;" onmousedown="music_p();">
+            <!--<source src="1.mp3" controls="controls"  />-->
+        </audio>
+        <!--<embed src="1.mp3" autostart="true" loop="true" controls="smallconsole" hidden="true">-->
+    </div><!--End_music-->
+
+    <div id="header">
+        <p id="logo"><a href="index.html" title="">hi web</a></p>
+        <p id="slogan">学习与分享</p>
+        <form action="" method="post" name="search" id="search">
+            <input type="text" name="keyword" id="keyword" value="点此搜索..." />
+            <input type="image" src="images/search_btn.jpg" name="search_btn" id="search_btn" />
+        </form>
+        <div id="cle"></div>
+            <!--div导航-->
+            <div id="daohang" style="margin-left:20px;">
+                <div id="btn1">
+                    php
+                    <ul id="p1">
+                        <li><a href ="ziye/thinkphp.html" target="assistant">ThinkPHP</a></li>
+                    </ul>
+                </div>
+                <div id="btn2">
+                    javascript
+                    <ul id="p2">
+                        <li><a href="ziye/shizhong.html" target="assistant">jquery</a></li>
+                    </ul>
+                </div>
+                <div id="btn3">
+                    mysql
+                    <ul id="p3">
+                        <li><a href="ziye/mysql_shiwu.html" target="assistant">事务</a></li>
+                        <li><a href="#">创建</a></li>
+                        <li><a href="#">修改</a></li>
+                        <li><a href="#">更新</a></li>
+                    </ul>
+                </div>
+                <div id="btn4">
+                    apache
+                    <ul id="p4">
+                        <li><a href="#">路由</a></li>
+                        <li><a href="#">伪静态</a></li>
+                    </ul>
+                </div>
+                <div id="btn5">
+                    xml
+                    <ul id="p5">
+                        <li><a href="#">标签</a></li>
+                    </ul>
+                </div>
+                <div id="btn6">
+                    .net
+                    <ul id="p6">
+                        <li><a href="#">c#.net</a></li>
+                        <li><a href="#">vb.net</a></li>
+                        <li><a href="#">c++.net</a></li>
+                    </ul>
+                </div>
+            </div>
+        <div style="clear: both;"></div>
+        <!--跑马灯-->
+        <div id="paomadeng">
+            <marquee onmouseover="this.stop();" onmouseout="this.start()">学习与分享<img height="10px" src="images/phiz/baobao.gif" alt="" /></marquee>
+        </div>        
+    </div>
+    <!--中间-->
+    <div id="main">
+        <div id="container">
+            <iframe src="ziye/sy.html" name="assistant"></iframe>
+        </div><!--container_End-->
+        <div id="sider"><!--中间左边-->
+            <div class="siderlist">
+                <h3><a href="#" title="aaaaaaa">下载1</a></h3>
+                <p></p>
+                <ul>
+                    <li class="listshow_a"><a href="#" title=""><img src="images/sider_temp_a1.jpg" alt="" /></a></li>
+                    <li class="listshow_b"><a href="#" title=""><img src="images/sider_temp_a2.jpg" alt="" /></a></li>
+                    <li class="listshow_c"><a href="#" title=""><img src="images/sider_temp_a3.jpg" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="siderlist">
+                <h3><a href="#" title="bbbbbbbb">下载2</a></h3>
+                <p></p>
+                <ul>
+                    <li class="listshow_a"><a href="#" title=""><img src="images/sider_temp_a1.jpg" alt="" /></a></li>
+                    <li class="listshow_b"><a href="#" title=""><img src="images/sider_temp_a2.jpg" alt="" /></a></li>
+                    <li class="listshow_c"><a href="#" title=""><img src="images/sider_temp_a3.jpg" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="siderlist">
+                <h3><a href="#" title="bbbbbbbb">下载3</a></h3>
+                <p></p>
+                <ul>
+                    <li class="listshow_a"><a href="#" title=""><img src="images/sider_temp_a1.jpg" alt="" /></a></li>
+                    <li class="listshow_b"><a href="#" title=""><img src="images/sider_temp_a2.jpg" alt="" /></a></li>
+                    <li class="listshow_c"><a href="#" title=""><img src="images/sider_temp_a3.jpg" alt="" /></a></li>
+                </ul>
+            </div>
+        </div><!--sider_End-->
+    </div><!--main_End-->
+    <div id="footer">
+        <p>版权所有：web 设计 - <a href="#" title="">xxx.com</a>禁止</p>
+    </div><!--footer_End-->
+    
+    <!--右下角广告-->
+    <div id="guanggao">
+        <div id="jiaocha">
+            <img src="images/jiaocha.jpg" alt="" />
+        </div>
+        <div id="xingming">软件技术(1)班<br />xxx<br />3318090351</div>
+        <div>
+            <img height="200" width="200" src="images/phiz/haixiu.gif" alt="" />
+        </div>
+    </div><!--End_guanggao-->
+</body>
+</html>
